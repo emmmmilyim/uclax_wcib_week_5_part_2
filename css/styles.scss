@@ -1,0 +1,75 @@
+html,
+body {
+  height: 100%;
+  background-color: #333;
+  background-image: url("images/rainbow.jpg");
+  font-family: 'Comfortaa', cursive;
+}
+
+body {
+  display: -ms-flexbox;
+
+  color: #3c1361;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: auto;
+}
+
+.grid-container {
+  display: grid;
+  justify-content: center;
+}
+
+.story {
+  background: #3c1361;
+  color: #fff;
+  padding: 10px;
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+  margin-right: 7rem;
+}
+
+
+@media (min-width: 48em) {
+  .masthead-brand {
+    float: left;
+  }
+  .nav-masthead {
+    float: right;
+  }
+  /* Custom default button */
+  button.randomize {
+    margin-top: 15px;
+    background-color: #3c1361;
+    color: white;
+    border: dotted;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}

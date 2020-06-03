@@ -1,26 +1,124 @@
-<!doctype html>
-<html class="" lang="en">
 
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-
-    <title>Week 5, Part 2</title>
-
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Silly Story Generator</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/cover/">
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
   </head>
+    <!-- Bootstrap core CSS -->
 
-  <body>
 
-    <h1>Week 5, Part 2</h1>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
 
-	</body>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="css/styles.scss" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="masthead mb-auto">
+    <div class="inner">
+    </div>
+  </header>
 
+  <main role="main" class="inner cover">
+    <h1 class="cover-heading">Silly Story Generator</h1>
+    <p class="lead">Choose details from the bottom categories to create a ~silly~ story!</p>
+    <p class="lead">
+
+
+    <div class="card-deck mb-3 text-center">
+      <div class="container">
+        <div class="row">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 class="my-0 font-weight-normal">Who are you?</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title"><small>Enter Your Name</small></h1>
+              <div>
+                <label for="customname">Name: </label>
+                <input id="customname" type="text" placeholder="">
+              </div>
+            </div>
+          </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">Where are you?</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title"><small>Choose a Country</small></h1>
+          <div>
+            <label for="us">US</label><input id="us" type="radio" name="ukus" value="us">
+            <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 class="my-0 font-weight-normal">What type of music do you like?</h4>
+        </div>
+      <div class="card-body">
+        <h1 class="card-title pricing-card-title"><small>Choose a Music Genre</small></h1>
+        <select id="genre">
+          <option value="rockroll">Rock & Roll</option>
+          <option value="jazz">Jazz</option>
+          <option value="classic">Classic</option>
+          <option value="country">Country</option>
+        </select>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      <div>
+         <button class="randomize">
+           <strong>Generate Story</strong>
+         </button>
+      </div>
+
+<p class="story" style="visibility: visible;">
+</p>
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p> Em's Silly Story Generator </p>
+    </div>
+  </footer>
+</div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+</body>
 </html>
